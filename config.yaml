@@ -1,0 +1,30 @@
+channels: 1
+pix: 32
+piy: 32 
+
+upscale: 2
+basechannel: 128
+
+lr: 0.0001
+epochs: 500
+ratio: 0.99
+is_shuffle: True
+batch_size: 1200
+
+multiplier: 2.5
+grad_clip: 1.0
+
+# Below are for EDSR
+
+num_resi: 8
+
+# Below are for DDPM
+
+T: 500
+iT: 100
+eta: 0.2
+
+channel_mult: [1, 2, 2, 2]
+attn: [2]
+num_res_blocks: 2
+dropout: 0.15
